@@ -60,7 +60,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: clearlinux/nginx
+      - image: celosop/nginx
         name: nginx
         imagePullPolicy: IfNotPresent
         ports:
@@ -70,7 +70,7 @@ spec:
           mountPath: /var/www/html
         - name: nginx-config-volume
           mountPath: /etc/nginx/conf.d
-      - image: clearlinux/wordpress
+      - image: celosop/wordpress
         name: wordpress
         imagePullPolicy: IfNotPresent
         env:
