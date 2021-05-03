@@ -2,7 +2,7 @@ version: '2'
 
 services:
     db:
-        image: clearlinux/mariadb:latest
+        image: celosop/mariadb:latest
         restart: always
         environment:
             MYSQL_DATABASE: wordpress
@@ -13,7 +13,7 @@ services:
         networks:
             - code-network
     nginx:
-        image: clearlinux/nginx:latest
+        image: celosop/nginx:latest
         ports:
             - "8080:80"
         links:
@@ -26,7 +26,7 @@ services:
     wordpress:
         depends_on:
             - db
-        image: clearlinux/wordpress:latest
+        image: celosop/wordpress:latest
         restart: always
         volumes:
             - html:/var/www/html
