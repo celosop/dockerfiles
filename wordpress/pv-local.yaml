@@ -12,7 +12,7 @@ spec:
   nfs:
     path: /mnt/hd1/wordpress
     server: 172.16.64.238
-  persistentVolumeReclaimPolicy: Recycle
+  persistentVolumeReclaimPolicy: Retain
 ---
 kind: PersistentVolume
 apiVersion: v1
@@ -28,4 +28,4 @@ spec:
   nfs:
     path: /mnt/hd1/wordpress
     server: 172.16.64.238
-  persistentVolumeReclaimPolicy: Recycle
+  persistentVolumeReclaimPolicy: Retain
