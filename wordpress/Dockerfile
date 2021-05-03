@@ -1,4 +1,4 @@
-FROM clearlinux/php-fpm
+FROM celosop/php-fpm
 
 VOLUME /var/www/html
 
