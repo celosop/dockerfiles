@@ -32,7 +32,7 @@ spec:
         tier: mysql
     spec:
       containers:
-      - image: clearlinux/mariadb
+      - image: celosop/mariadb
         name: mysql
         imagePullPolicy: IfNotPresent
         args: ["--bind-address=0.0.0.0"]
