@@ -24,6 +24,7 @@ spec:
     storage: 500Mi 
   accessModes:
     - ReadWriteOnce
-  hostPath:
-    path: "/tmp/data/pv-2"
+  nfs:
+    path: /mnt/hd1/wordpress
+    server: 172.16.64.238
   persistentVolumeReclaimPolicy: Recycle
